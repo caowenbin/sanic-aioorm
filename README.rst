@@ -15,7 +15,9 @@ Feature
 Example
 -------------------------------
 
+
 model.py
+
 
 .. code:: python
 
@@ -23,17 +25,16 @@ from sanic_aioorm import AioOrm, AioModel
 from peewee import Proxy, CharField
 db = Proxy()
 
-
 @AioOrm.regist
 class User(AioModel):
     username = CharField()
-
     class Meta:
         database = db
 
 
 
 app.py
+
 
 .. code:: python
 
@@ -47,7 +48,6 @@ orm = AioOrm(app)
 orm.init_proxys(defaultdb=db)
 orm.create_tables(User=[{'username': "hsz"}, {'username': "jojo"}])
 
-
 @app.get("/")
 async def testget(request):
     try:
@@ -56,7 +56,6 @@ async def testget(request):
         return json({"error": str(e)})
     else:
         return json({"hello": [await u.to_dict() for u in users]})
-
 
 @app.post("/")
 async def testpost(request):
@@ -69,6 +68,8 @@ async def testpost(request):
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=4500)
+
+
 
 Install
 --------------------------------
