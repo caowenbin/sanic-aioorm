@@ -1,0 +1,18 @@
+[project]
+project_name = sanic-aioorm
+license = MIT
+keywords = ['orm', 'async', 'sanic']
+version = 0.0.1
+description = simple tools
+url = https://github.com/Sanic-Extensions/sanic-aioorm
+
+[author]
+author = hsz
+author_email = hsz1273327@gmail.com
+
+[form]
+form = model
+
+[env]
+env = venv
+compiler = python
