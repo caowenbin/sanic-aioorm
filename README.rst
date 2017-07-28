@@ -10,8 +10,8 @@ email: hsz1273327@gmail.com
 
 Feature
 ----------------------
-* simple to use, just like using flask
-
+* simple to use, just like using flask's extension
+* design to take the place of sanic-peewee
 Example
 -------------------------------
 
@@ -83,11 +83,6 @@ Documentation
 
 `Documentation on Readthedocs <https://github.com/Sanic-Extensions/sanic-aioorm>`_.
 
-
-
-TODO
------------------------------------
-* auth Decorator
 
 
 
