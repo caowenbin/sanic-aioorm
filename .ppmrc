@@ -2,7 +2,7 @@
 project_name = sanic-aioorm
 license = MIT
 keywords = ['orm', 'async', 'sanic']
-version = 0.0.2
+version = 0.0.3
 description = simple tools
 url = https://github.com/Sanic-Extensions/sanic-aioorm
 
