@@ -47,6 +47,3 @@ class Core:
                 proxy.initialize(self.sqldatabases[name])
             except:
                 print("unknown Databases {}".format(name))
-
-    def __call__(self, **kwargs):
-        self.init_dbs(**kwargs)
