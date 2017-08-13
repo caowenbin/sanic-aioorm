@@ -41,6 +41,10 @@ class Core:
                 await db.close()
                 print(name, 'disconnected')
 
+        if "extensions" not in app.__dir__():
+            app.extensions = {}
+        app.extensions['SanicAioOrm'] = self
+
     def init_proxys(self, **kwargs):
         for name, proxy in kwargs.items():
             try:
