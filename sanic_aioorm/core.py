@@ -46,6 +46,8 @@ class Core:
         app.extensions['SanicAioOrm'] = self
 
     def init_proxys(self, **kwargs):
+        """初始化peewee的代理数据库对象
+        """
         for name, proxy in kwargs.items():
             try:
                 proxy.initialize(self.sqldatabases[name])

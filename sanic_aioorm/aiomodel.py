@@ -10,4 +10,6 @@ class ToDictMixin:
 
 
 class Model(AioModel, ToDictMixin):
+    """带转化成dict功能的model
+    """
     pass
